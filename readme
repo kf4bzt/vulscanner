@@ -1,0 +1,7 @@
+In order for this script to work properly, you will need a file called subnet_list.txt which will include your individual
+network subnets you wish to scan. Later on I will have the app ask the user for a subnet in the single scans, but this works
+well for multiple scans. The subnets should be placed like shown below.
+
+192.168.100.1/24
+192.168.200.1/16
+192.168.300.1/24
