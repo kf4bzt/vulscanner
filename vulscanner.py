@@ -1,6 +1,11 @@
 #!/bin/python
 # Vulnerabilty Scanner using NMAP and the Vulscan file suite to assess current Network security footprint.
 # Download http://www.computec.ch/projekte/vulscan/?s=download and place vulscan directory files in the /usr/share/nmap/scripts location
+# Below are the locations of the vulnerability scanning scripts that we will use.
+#
+# https://github.com/scipag/vulscan scipag_vulscan
+# https://github.com/vulnersCom/nmap-vulners.git
+#
 
 import subprocess
 import sys
