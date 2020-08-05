@@ -18,10 +18,18 @@ subnet_list = working_dir + 'subnet_list.txt'
 vulscan_results = working_dir + 'vulscan_results_'
 scan_results = working_dir + 'scan_results_'
 
+# If the file subnet_list does not exist in the working_dir location, the user will be prompted
+# to create one before the script will run. The file will need to be located in the path
+# working_dir
+#
 if not os.path.isfile(subnet_list):
     print ("Please create subnet list called subnet_list.txt with one subnet/host per line in: " + working_dir)
     exit()
 
+# If the file vulscan.nse does not exist in the working_dir location, the user will be prompted
+# to create one before the script will run. The file will need to be located in the path
+# /usr/share/nmap/scripts/vulscan/
+#
 if not os.path.isfile("/usr/share/nmap/scripts/vulscan/vulscan.nse"):
     print ("Please be sure nmap is installed and you have the vulscan files in /usr/share/nmap/scripts/vulscan dir")
     exit()
